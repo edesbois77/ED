@@ -9,7 +9,8 @@ export default defineConfig({
   },
 });
 
+import { defineConfig } from 'vite'
+
 export default defineConfig({
   base: '/ED/',
-  // ... other settings
 })
