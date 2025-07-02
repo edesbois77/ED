@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/ED/', // this is crucial for GitHub Pages to resolve paths
+  base: '/ED/', // ✅ This must match your repo name
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
