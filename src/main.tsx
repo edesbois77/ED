@@ -8,3 +8,8 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>
 );
+import { BrowserRouter } from 'react-router-dom';
+
+<BrowserRouter basename="/ED/">
+  <App />
+</BrowserRouter>
