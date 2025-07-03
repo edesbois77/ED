@@ -12,13 +12,22 @@ const AboutPage: React.FC = () => {
   const { ref: section3Ref, isVisible: section3Visible } = useScrollAnimation();
 
   const handleDownloadCV = () => {
+    // Check if CV file exists before attempting to download
+    const cvPath = '/cv/Edward_Desbois_CV.pdf';
+    
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/cv/Edward_Desbois_CV.pdf';
+    link.href = cvPath;
     link.download = 'Edward_Desbois_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    
+    // Optional: Add error handling
+    link.onerror = () => {
+      console.error('CV file not found');
+      alert('Sorry, the CV file is currently unavailable.');
+    };
   };
 
   return (
