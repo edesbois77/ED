@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
 
           <div className="text-base sm:text-lg md:text-xl text-black mb-8 sm:mb-12 max-w-xl font-light leading-relaxed space-y-3 sm:space-y-4">
             <p>This site is a creative take on my CV, turning 25 years of leadership, strategy and delivery into a suite of modular products that you could benefit from.</p>
-            <p>While the company might not be real, the experience behind it very much is. Simply add the products you want to your basket, connect and you too could benefit from <span className="font-bold">ED</span> in a matter of clicks.</p>
+            <p>While the company might not be real, the experience behind it very much is. Simply add the products you want to your basket and get in touch with <span className="font-bold">ED</span>.</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md group/buttons">
